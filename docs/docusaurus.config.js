@@ -17,6 +17,7 @@ const tagline = {
   ja: '21世紀のモダンターミナル',
   'zh-hans': '21 世纪的现代终端',
   'zh-hant': '21 世紀的現代終端',
+  ru: 'Современный терминал XXI века.',
 };
 
 /** @type {import('@docusaurus/types').Config} */
@@ -32,7 +33,17 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale,
-    locales: ['en', 'ko', 'pt-br', 'es', 'pl', 'ja', 'zh-hans', 'zh-hant'],
+    locales: [
+      'en',
+      'ko',
+      'pt-br',
+      'es',
+      'pl',
+      'ja',
+      'zh-hans',
+      'zh-hant',
+      'ru',
+    ],
   },
 
   headTags: [
@@ -101,7 +112,7 @@ const config = {
         },
         items: [
           { to: '/docs/install', label: 'Install', position: 'left' },
-          { to: '/docs/config', label: 'Config', position: 'left', },
+          { to: '/docs/config', label: 'Config', position: 'left' },
           { to: '/docs/features', label: 'Features', position: 'left' },
           { to: '/docs/releases', label: 'Releases', position: 'left' },
           { to: '/blog', label: 'Blog', position: 'left' },
